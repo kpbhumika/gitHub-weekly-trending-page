@@ -1,0 +1,22 @@
+{
+  "type": "module",
+  "private": true,
+  "workspaces": [
+    "server",
+    "client",
+    "e2e"
+  ],
+  "scripts": {
+    "build:client": "yarn workspace gitHub-weekly-trending-page-client build",
+    "dev": "yarn workspace gitHub-weekly-trending-page-server dev",
+    "dev:debug": "yarn workspace gitHub-weekly-trending-page-server dev:debug",
+    "heroku-postbuild": "yarn workspace gitHub-weekly-trending-page-client build",
+    "start": "yarn workspace gitHub-weekly-trending-page-server start",
+    "dev:cypress": "yarn workspace gitHub-weekly-trending-page-server dev:e2e",
+    "e2e:open": "yarn workspace gitHub-weekly-trending-page-e2e e2e:open",
+    "e2e:run": "yarn workspace gitHub-weekly-trending-page-e2e e2e:run"
+  },
+  "engines": {
+    "node": "^16.18"
+  }
+}
